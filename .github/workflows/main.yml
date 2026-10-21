@@ -2,13 +2,13 @@ name : ML CI
 on : [push]
 jobs :
 test:
-runs_on:ubuntu-latest
-steps:
-- uses:action/checkout@v4
-- name:setup python
-uses:
+runs_on : ubuntu-latest
+steps :
+- uses : action/checkout@v4
+- name : setup python
+uses :
 action/setup-python@5
-with:
+with :
 python-version : '3.11'
 -name : install pytest
 run : pip install pytest
