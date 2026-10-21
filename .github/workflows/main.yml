@@ -1,6 +1,6 @@
-name : ML CI 
-"on" : [push]
-jobs :
+name: ML CI 
+"on": [push]
+jobs:
   test:
     runs_on:ubuntu-24.04
     steps:
@@ -10,7 +10,7 @@ jobs :
         with:
           python-version: '3.11'
       - name: install pytest
-        run : pip install pytest
-      - name : run tests
-        run : pytest
+        run: pip install pytest
+      - name: run tests
+        run: pytest
 
