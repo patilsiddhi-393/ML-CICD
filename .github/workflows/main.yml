@@ -2,7 +2,7 @@ name: ML CI
 "on": [push]
 jobs:
    test:
-     runs-on:ubuntu-24.04
+     runs-on: ubuntu-24.04
      steps:
        - uses: action/checkout@v4
        - name: setup python
@@ -10,7 +10,7 @@ jobs:
          with:
            python-version: '3.11'
        - name: install pytest
-        run: pip install pytest
+         run: pip install pytest
        - name: run tests
-        run: pytest
+         run: pytest
 
