@@ -2,7 +2,7 @@ name : ML CI
 on : [push]
 jobs :
 test:
-runs_on:ubuntu-lastest
+runs_on:ubuntu-latest
 steps:
 - uses:action/checkout@v4
 - name:setup python
