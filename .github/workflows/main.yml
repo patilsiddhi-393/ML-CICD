@@ -2,8 +2,8 @@ name : ML CI
 "on" : [push]
 jobs :
   test:
-  runs_on:ubuntu-24.04
-  steps:
+    runs_on:ubuntu-24.04
+    steps:
       - uses: action/checkout@v4
       - name: setup python
         uses: action/setup-python@5
